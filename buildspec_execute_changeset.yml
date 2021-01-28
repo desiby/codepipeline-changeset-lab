@@ -1,0 +1,11 @@
+version: 0.2
+
+env:
+  shell: bash
+
+phases:
+   build:
+    commands:
+    - aws cloudformation execute-change-set \
+    --change-set-name my-change-set \
+    --stack-name my-stack dbb-myapp-stack
