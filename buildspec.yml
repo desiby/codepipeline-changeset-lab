@@ -1,0 +1,12 @@
+version: 0.2
+
+env:
+  shell: bash
+
+phases:
+   build:
+    commands:
+    - aws cloudformation create-stack \
+    --stack-name dbb-myapp-stack \
+    --template-body file://app.yaml \
+    --capabilities CAPABILITY_IAM
