@@ -1,0 +1,9 @@
+version: 0.2
+
+env:
+  shell: bash
+
+phases:
+   build:
+    commands:
+    - aws cloudformation create-change-set --stack-name dbb-sample-app --change-set-name my-change-set --template-body file://app.yaml --change-set-type CREATE --capabilities CAPABILITY_NAMED_IAM
