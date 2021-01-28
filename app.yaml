@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 
-Description: Launching app stack with codepipeline
+Description: Launching dynamodb app stack with codepipeline
 
 Resources: 
     MyDynamoDBTable:
@@ -24,7 +24,7 @@ Resources:
           - Key: stelligent-u-lesson
             Value: '12.2'
           - Key: stelligent-u-lab
-            Value: '12.2.1'
+            Value: '12.2.2'
 
     MyAppExecutionRole:
       Type: AWS::IAM::Role
@@ -46,4 +46,4 @@ Resources:
           - Key: stelligent-u-lesson
             Value: "12.2"
           - Key: stelligent-u-lab
-            Value: "12.2.1"
+            Value: "12.2.2a"
