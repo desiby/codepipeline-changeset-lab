@@ -7,6 +7,6 @@ phases:
    build:
     commands:
     - aws cloudformation create-stack \
-    --stack-name dbb-myapp-stack \
+    --stack-name dbb-app-stack \
     --template-body file://app.yaml \
     --capabilities CAPABILITY_IAM
